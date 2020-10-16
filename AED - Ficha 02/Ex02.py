@@ -1,7 +1,7 @@
 import os
 import traceback
 
-# [Ficha 02 - Ex. 02] - Classifica um triângulo quanto as lados
+# [Ficha 02 - Ex. 02] - Classifica um triângulo quanto aos lados
 
 try:
     ladosTriangulo, iguais = [], 0
