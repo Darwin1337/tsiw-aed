@@ -15,16 +15,8 @@ try:
                     isNumberCorrect = True
             except:
                 continue
-    for x in range(len(ladosTriangulo)):
-        for j in range(len(ladosTriangulo)):
-            if ladosTriangulo.count(ladosTriangulo[0]) < len(ladosTriangulo):
-                if int(x) != int(j) and int(ladosTriangulo[x]) == int(ladosTriangulo[j]):
-                    iguais += 1
-            else:
-                iguais = 3
-                break
-    mensagens = ["O triângulo é escaleno - lados todos diferentes.", "O triângulo é isósceles - dois lados iguais.", "O triângulo é equilátero - lados todos iguais."]
-    print("\n" + mensagens[iguais - 1]) if iguais != 0 else print("\n" + mensagens[0])
+    mensagens = ["O triângulo é equilátero - lados todos iguais.", "O triângulo é isósceles - dois lados iguais.", "O triângulo é escaleno - lados todos diferentes."]
+    print(mensagens[len(set(ladosTriangulo)) - 1])
 except Exception as e:
     print(str(e))
     traceback.print_exc()
