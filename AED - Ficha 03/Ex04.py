@@ -1,25 +1,29 @@
 import os
+import random
 import traceback
 
-# [Ficha 01 - Ex. 04] - Calcula o IMC dado o peso e a altura da pessoa
+# [Ficha 03 - Ex. 04] - Jogo de adivinhar o número (versão 1)
 
 try:
-    isNumberCorrect1, isNumberCorrect2 = False, False
-    while not isNumberCorrect1:
-        try:
-            altura = float(str(input("Introduza a altura em metros: ")).replace(",", "."))
-            if altura >= 1.20 and altura <= 2.20:
-                isNumberCorrect1 = True
-        except:
-            continue
-    while not isNumberCorrect2:
-        try:
-            peso = float(str(input("Introduza o peso em kilogramas: ")).replace(",", "."))
-            if peso >= 35 and peso <= 350:
-                isNumberCorrect2 = True
-        except:
-            continue
-    print("\nIMC: %.2f" %float(peso / (altura*altura)))
+    random, Acertou, tentativas = random.randint(1, 50), False, 0
+    while not Acertou:
+        if tentativas >= 10:
+            print("\nEsgotou as 10 tentativas!")
+            break
+        isPalpiteCorrect = False
+        while not isPalpiteCorrect:
+            try:
+                palpite = int(input("Palpite n. " + str(tentativas + 1) + ": "))
+                if palpite > 0: isPalpiteCorrect = True
+            except:
+                continue
+        tentativas += 1
+        if palpite < random: print("Maior")
+        elif palpite > random: print("Menor")
+        else:
+            print("Acertou")
+            print("Utilizou " + str(tentativas) + " tentativas")
+            Acertou = True
 except Exception as e:
     print(str(e))
     traceback.print_exc()
