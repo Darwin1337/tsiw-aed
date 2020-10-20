@@ -11,17 +11,19 @@ try:
             if maxNum > 0: isMaxCorrect = True
         except:
             continue
-    maior = 0
+    maior, media = 0, 0
     for x in range(maxNum):
         isNumberCorrect = False
         while not isNumberCorrect:
             try:
                 num = int(input("Introduza o no. " + str(x + 1) + ": "))
                 isNumberCorrect = True
+                media += num
             except:
                 continue
             if int(num) > int(maior): maior = num
-    print("O maior numero é: " + str(maior))
+    print("A média é: " + str(media / maxNum))
+    print("\nO maior numero é: " + str(maior))
 except Exception as e:
     print(str(e))
     traceback.print_exc()
