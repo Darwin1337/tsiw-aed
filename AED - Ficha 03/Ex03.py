@@ -2,6 +2,7 @@ import os
 import traceback
 
 # [Ficha 03 - Ex. 03] - Determina o fatorial de um número
+
 try:
     isNumCorrect = False
     while not isNumCorrect:
