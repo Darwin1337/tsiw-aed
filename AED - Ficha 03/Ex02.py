@@ -4,25 +4,23 @@ import traceback
 # [Ficha 03 - Ex. 02] - Repete a pergunta de acordo com o input do utilizador
 #                       números e verifica qual dos números introduzidos é o maior
 try:
-    isMaxCorrect = False
-    while not isMaxCorrect:
+    maior, media = 0, 0.0
+    while True:
         try:
             maxNum = int(input("Indique a quantidade de números que pretende introduir: "))
-            if maxNum > 0: isMaxCorrect = True
+            if maxNum > 0: break
         except:
             continue
-    maior, media = 0, 0
     for x in range(maxNum):
-        isNumberCorrect = False
-        while not isNumberCorrect:
+        while True:
             try:
                 num = int(input("Introduza o no. " + str(x + 1) + ": "))
-                isNumberCorrect = True
                 media += num
+                break
             except:
                 continue
-            if int(num) > int(maior): maior = num
-    print("A média é: " + str(media / maxNum))
+        if int(num) > int(maior): maior = num
+    print("A média é: " + str(float(media / maxNum)))
     print("\nO maior numero é: " + str(maior))
 except Exception as e:
     print(str(e))

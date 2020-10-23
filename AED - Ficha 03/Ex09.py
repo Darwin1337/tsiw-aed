@@ -4,12 +4,11 @@ import traceback
 # [Ficha 03 - Ex. 09] - Verifica se um número é perfeito
 
 try:
-    isNumberCorrect, soma = False, 0
-    while not isNumberCorrect:
+    soma = 0
+    while True:
         try:
             num = int(input("Introduza um número: "))
-            if num > 0:
-                isNumberCorrect = True
+            if num > 0: break
         except:
             continue
     for x in range(num - 1, 0, -1):

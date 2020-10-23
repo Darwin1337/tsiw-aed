@@ -4,12 +4,11 @@ import traceback
 # [Ficha 03 - Ex. 08] - Ilustra os primeiros n termos da sequência de Fibonacci
 
 try:
-    isNumberCorrect, lastFirst, lastSecond, current = False, 0, 1, 0
-    while not isNumberCorrect:
+    lastFirst, lastSecond, current =0, 1, 0
+    while True:
         try:
             num = int(input("Introduza um número: "))
-            if num > 0:
-                isNumberCorrect = True
+            if num > 0: break
         except:
             continue
     for x in range(num):

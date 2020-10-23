@@ -4,12 +4,11 @@ import traceback
 # [Ficha 03 - Ex. 10] - Converte um número decimal em binário
 
 try:
-    isNumberCorrect, binario = False, ""
-    while not isNumberCorrect:
+    binario = ""
+    while True:
         try:
             num = int(input("Introduza um número: "))
-            if num >= 1 and num <= 99:
-                isNumberCorrect = True
+            if num >= 1 and num <= 99: break
         except:
             continue
     while num >= 1:

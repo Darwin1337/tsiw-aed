@@ -4,11 +4,10 @@ import traceback
 # [Ficha 03 - Ex. 03] - Determina o fatorial de um número
 
 try:
-    isNumCorrect = False
-    while not isNumCorrect:
+    while True:
         try:
             num = int(input("Introduza um número: "))
-            if num >= 0: isNumCorrect = True
+            if num >= 0: break
         except:
             continue
     for x in range(num - 1, 0, -1):

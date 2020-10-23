@@ -4,12 +4,11 @@ import traceback
 # [Ficha 03 - Ex. 07] - Verifica se um número é primo ou não
 
 try:
-    isNumberCorrect, isDivisible = False, False
-    while not isNumberCorrect:
+    isDivisible = False
+    while True:
         try:
             num = int(input("Introduza um número: "))
-            if num > 0:
-                isNumberCorrect = True
+            if num > 0: break
         except:
             continue
     for x in range(num - 1, 1, -1):
