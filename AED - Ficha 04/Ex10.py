@@ -16,9 +16,9 @@ try:
             continue
     lista = texto.split(",")
     for x in range(len(lista)):
-        for j in range(len(lista[x].strip().split(" "))):
-            if j % 2 == 0: result1 += lista[x].strip().split(" ")[j] + " "
-            else: result2 += lista[x].strip().split(" ")[j] + " "
+        for j in range(len(lista[x].split(" "))):
+            if j % 2 == 0: result1 += lista[x].split(" ")[j] + " "
+            else: result2 += lista[x].split(" ")[j] + " "
     print("\n" + result1.strip() + "\n" + result2.strip())
 except Exception as e:
     print(str(e))
