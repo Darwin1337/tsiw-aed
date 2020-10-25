@@ -3,6 +3,7 @@ import traceback
 
 # [Ficha 04 - Ex. 01] - Inverte uma string
 #                       Evitar o uso do método 'slicing' do python, por ex: frase[::-1]
+
 try:
     result = ""
     while True:
