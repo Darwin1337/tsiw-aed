@@ -11,7 +11,7 @@ try:
             if frase.replace(" ", ""): break
         except:
             continue
-    print(frase.split(" ")[0] + " " + frase.split(" ")[len(frase.split(" ")) - 1])
+    print(frase.split(" ")[0] + " " + frase.split(" ")[-1])
 except Exception as e:
     print(str(e))
     traceback.print_exc()
