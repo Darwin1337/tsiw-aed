@@ -23,7 +23,7 @@ try:
             continue
     for x in range(texto.count(palavra)):
         posicoesEncontradas += str(texto.find(palavra, posTemp, len(texto)) + 1) + ", "
-        posTemp = int(posicoesEncontradas.replace(", ", "").split(", ")[-1]) + len(palavra)
+        posTemp = int(posicoesEncontradas[:-2].replace(", ", ",").split(",")[-1]) + len(palavra)
     print("\nN.º de ocorrências: " + str(texto.count(palavra)) + "\nPosições: " + posicoesEncontradas[:-2]) if posicoesEncontradas else print("\nSem correspondências")
 except Exception as e:
     print(str(e))
