@@ -4,7 +4,7 @@ import traceback
 # [Ficha 03 - Ex. 08] - Ilustra os primeiros n termos da sequência de Fibonacci
 
 try:
-    lastFirst, lastSecond, current =0, 1, 0
+    lastFirst, lastSecond, current = 0, 1, 0
     while True:
         try:
             num = int(input("Introduza um número: "))
