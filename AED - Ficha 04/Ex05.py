@@ -8,7 +8,8 @@ try:
     while True:
         try:
             frase = str(input("Nome: "))
-            if frase.replace(" ", ""): break
+            if frase.replace(" ", ""):
+                if frase.count(" ") >= 1: break
         except:
             continue
     print(frase.split(" ")[0] + " " + frase.split(" ")[-1])

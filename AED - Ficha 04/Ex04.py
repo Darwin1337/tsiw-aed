@@ -1,11 +1,10 @@
 import os
 import traceback
-import time
 
 # [Ficha 04 - Ex. 04] - Elimina dois ou mais espaços seguidos de uma string
 
 try:
-    result, countSpaces = "", 0
+    result = ""
     while True:
         try:
             frase = str(input("Frase: "))

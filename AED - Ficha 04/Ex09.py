@@ -19,6 +19,7 @@ try:
             if texto[x] == str(algarismos[j]):
                 foundDigit = True
                 result += extenso[j]
+                break
         if not foundDigit: result += texto[x]
     print(result)
 except Exception as e:

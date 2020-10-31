@@ -11,10 +11,10 @@ try:
             if frase.replace(" ", ""): break
         except:
             continue
-    resultado = frase.split(" ")[0] + " "
+    resultado = frase.split(" ")[0].capitalize() + " "
     for x in range(1, len(frase.split(" ")) - 1, 1):
         resultado += frase.split(" ")[x][0:1].upper() + ". "
-    print(resultado + frase.split(" ")[-1])
+    print(resultado + frase.split(" ")[-1].capitalize())
 except Exception as e:
     print(str(e))
     traceback.print_exc()
