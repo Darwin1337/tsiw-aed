@@ -1,5 +1,4 @@
 import os
-import random
 import traceback
 
 # [Ficha 04 - Ex. 05] - Imprime o primeiro e último nome de um nome completo
