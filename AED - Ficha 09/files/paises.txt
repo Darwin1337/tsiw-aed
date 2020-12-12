@@ -1,0 +1,18 @@
+Portugal;Europa
+Espanha;Europa
+França;Europa
+Alemanha;Europa
+Reino Unido;Europa
+Marrocos;África
+EUA;América do Norte
+Brasil;América do Sul
+Austrália;Oceânia
+Índia;Ásia
+Indonésia;Ásia
+Canadá;América do Norte
+África do Sul;África
+Polónia;Europa
+Nova Zelândia;Oceânia
+Egito;África
+Emirados Árabes Unidos;Ásia
+Argentina;América do Sul
