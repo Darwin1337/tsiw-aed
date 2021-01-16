@@ -31,7 +31,7 @@ def TakeVehicleOut():
             parqueEstacionamento[fila - 1][lugar - 1] = 0
             print("\nO veículo escolhido foi retirado!")
         else: print("\nNão há nenhum veículo estacionado no lugar e fila escolhidos!")
-    else: print("\nO parque de estacionamento já totalmente livre!")
+    else: print("\nO parque de estacionamento está totalmente livre!")
     ReturnMenu()
 
 def ParkingState():
